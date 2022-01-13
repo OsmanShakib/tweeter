@@ -2,8 +2,8 @@ header {
   height: 400px;
   width: 100%;
   position: relative;
-  background-color: #f0a000;
-  background-image: url("https://www.transparenttextures.com/patterns/dark-circles.png");
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
 }
 
 .img {
@@ -28,4 +28,10 @@ header {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+.header {
+  height: 400px;
+  width: 100%;
+  position: relative;
 }

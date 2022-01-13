@@ -14,35 +14,39 @@
     <!-- App CSS -->
     <link rel="stylesheet" href="./styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="./styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/responsive.css" type="text/css" />
     <link rel="stylesheet" href="./styles/header.css" type="text/css" />
     <link rel="stylesheet" href="./styles/new-tweets.css" type="text/css" />
-    
+    <link rel="stylesheet" href="./styles/tweets.css" type="text/css" />
     <link
+    
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./styles/tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
     <!-- App JS -->
     <script defer type="text/javascript" src="/scripts/client.js"></script>
-    
+    <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <div><span class="tweeter">tweeter</span></div>
-      <span class="writeTweet"><strong>Write</strong> a new tweet</span>
-      <div id= "arrow">
-        <i class= "fas fa-angle-double-down"></i>
+      <span class='logo'>tweeter</span>
+      <div class="writeTweet">
+      <span ><b>Write</b> a new tweet</span>
+      <i class="fas fa-angle-double-down"></i>
       </div>
-    </nav>
-    <header>
+    </nav> 
+    <header class="header">
       <div class = "img">
           <img class="profileImg" src="/images/profile-hex.png"> 
       </div>
@@ -65,6 +69,8 @@
           </div>
         </form>
       </section>
+      <div class="tweets-container"></div>
+
     </main>
   </body>
 </html>
