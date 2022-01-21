@@ -61,12 +61,11 @@ const renderTweets = function(tweets) {
 const $newTweet = $('#tweet-form');
   $newTweet.on('submit', function(event) {
     event.preventDefault();
-    const tweet = $("#tweet-text").val().trim().length;
-    if (!tweet) {
+    const tweet = $("#tweet-text").val().trim();
+    if (tweet === "" || tweet === null) {
       $('#errorMessage').show();
       $('#errorMessage').text("Tweet cannot be empty!");
-    };
-    if (tweet > 140) {
+    } else if (tweet.length > 140) {
       $('#errorMessage').show();
       $('#errorMessage').text("Tweet can't be longer than 140 characters!");
     } else {

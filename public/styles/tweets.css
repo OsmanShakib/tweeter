@@ -1,6 +1,7 @@
 #tweets-container {
   position: relative;
-  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .tweet-header {
@@ -43,6 +44,7 @@
   height: 100%;
   align-items: center;
   padding: 20px 0;
+  overflow-wrap: break-word;
 }
 
 #tweets {

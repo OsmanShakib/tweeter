@@ -42,3 +42,8 @@ button,
   margin-top: 5px;
   color: red;
 }
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
