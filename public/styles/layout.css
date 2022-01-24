@@ -26,6 +26,11 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+.main-container {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+}
 
 .logo {
   font-family: "Bungee", cursive;
@@ -34,5 +39,6 @@ body {
 .container {
   width: 90%;
   margin: auto;
+  margin-right: 60px;
   font-family: "Source Sans Pro", sans-serif;
 }
